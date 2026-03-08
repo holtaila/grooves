@@ -70,7 +70,7 @@ function piano(hl,ac,label){
   if(label)h+=`<div class="pl">${label}</div>`;
   h+=`<div class="pw">`;
   wk.forEach(k=>{const l=hs.has(k.s);h+=`<div class="wk${l?' hl':''}" style="left:${k.p*kw}%;width:${kw}%;background:${l?ac:'#f5f0e8'}"><span>${k.nm}</span></div>`});
-  bk.forEach(k=>{const l=hs.has(k.s);h+=`<div class="bk${l?' hl':''}" style="left:${(k.wp-.35)*kw}%;width:${kw*.65}%;${l?`background:${ac};border:1px solid ${ac};box-shadow:0 2px 8px ${ac}66`:''}"><span>${k.nm}</span></div>`});
+  bk.forEach(k=>{const l=hs.has(k.s);h+=`<div class="bk${l?' hl':''}" style="left:${(k.wp-.35)*kw}%;width:${kw*.65}%;${l?`background:linear-gradient(to bottom,${ac},color-mix(in srgb,${ac},#000 40%));border:1px solid #111;box-shadow:0 2px 8px ${ac}66`:''}"><span>${k.nm}</span></div>`});
   return h+`</div>`;
 }
 
