@@ -20,10 +20,12 @@ git push -u origin main
 ```
 
 GitHub Actions in this repo deploys the page automatically on every push to `main`.
+Deployment pushes built files to the `gh-pages` branch.
 
 In repository settings:
 
-- Settings -> Pages -> Source: GitHub Actions
+- Settings -> Pages -> Source: Deploy from a branch
+- Set branch to `gh-pages` and folder `/ (root)`
 
 Then open your published URL at:
 
